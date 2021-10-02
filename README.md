@@ -9,7 +9,7 @@
 
 **This SDK is compatible with Appwrite server version 0.10.x. For older versions, please check [previous releases](https://github.com/appwrite/sdk-for-android/releases).**
 
-Appwrite is an open-source backend as a service server that abstract and simplify complex and repetitive development tasks behind a very simple to use REST API. Appwrite aims to help you develop your apps faster and in a more secure way. Use the Android SDK to integrate your app with the Appwrite server to easily start interacting with all of Appwrite backend APIs and tools. For full API documentation and tutorials go to [https://appwrite.io/docs](https://appwrite.io/docs)
+Appwrite is an open-source backend as a service server that abstracts and simplifies complex and repetitive development tasks behind a very simple-to-use REST API. Appwrite aims to help you develop your apps faster and in a more secure way. Use the Android SDK to integrate your app with the Appwrite server to easily start interacting with all of Appwrite's backend APIs and tools. For full API documentation and tutorials go to [https://appwrite.io/docs](https://appwrite.io/docs)
 
 ![Appwrite](https://appwrite.io/images/github.png)
 
@@ -25,7 +25,7 @@ repositories {
 }
 ```
 
-If you would like to fetch our SNAPSHOT releases, you need to add the SNAPSHOT maven repository to your `build.gradle(.kts)`:
+If you would like to fetch our SNAPSHOT releases, you will need to add the SNAPSHOT maven repository to your `build.gradle(.kts)`:
 
 ```groovy
 repositories {
@@ -58,11 +58,11 @@ Add this to your project's `pom.xml` file:
 ## Getting Started
 
 ### Add your Android Platform
-To initialize your SDK and start interacting with Appwrite services, you need to add a new Android platform to your project. To add a new platform, go to your Appwrite console, select your project (create one if you haven't already), and click the 'Add Platform' button on the project Dashboard.
+To initialize your SDK and start interacting with Appwrite services, you need to add a new Android platform to your project. To add a new platform, go to your Appwrite console, select your project (create one if you haven't already), and click the 'Add Platform' button on the Project Dashboard.
 
 From the options, choose to add a new **Android** platform and add your app credentials.
 
-Add your app <u>name</u> and <u>package name</u>. Your package name is generally the applicationId in your app-level `build.gradle` file. By registering a new platform, you are allowing your app to communicate with the Appwrite API.
+Add your app <u>name</u> and <u>package name</u>. Your package name is generally the applicationId in your app-level `build. Gradle file. By registering a new platform, you are allowing your app to communicate with the Appwrite API.
 
 ### Registering additional activities
 In order to capture the Appwrite OAuth callback url, the following activity needs to be added to your [AndroidManifest.xml](https://github.com/appwrite/playground-for-android/blob/master/app/src/main/AndroidManifest.xml). Be sure to replace the **[PROJECT_ID]** string with your actual Appwrite project ID. You can find your Appwrite project ID in your project settings screen in the console.
@@ -96,7 +96,7 @@ val client = Client(context)
   .setSelfSigned(true) // Remove in production
 ```
 
-Before starting to send any API calls to your new Appwrite instance, make sure your Android emulators has network access to the Appwrite server hostname or IP address.
+Before starting to send any API calls to your newly created Appwrite instance, make sure that your Android emulators have network access to the Appwrite server hostname or IP address.
 
 When trying to connect to Appwrite from an emulator or a mobile device, localhost is the hostname of the device or emulator and not your local Appwrite instance. You should replace localhost with your private IP. You can also use a service like [ngrok](https://ngrok.com/) to proxy the Appwrite API.
 
